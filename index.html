@@ -1,188 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>HOC Hub</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-
-background:#071019;
-
-color:white;
-
-}
-
-header{
-
-background:linear-gradient(135deg,#00b894,#0984e3);
-
-padding:40px 20px;
-
-text-align:center;
-
-}
-
-header h1{
-
-font-size:38px;
-
-font-weight:700;
-
-}
-
-header p{
-
-margin-top:10px;
-
-opacity:.9;
-
-}
-
-.container{
-
-width:95%;
-
-max-width:1200px;
-
-margin:auto;
-
-padding:25px;
-
-}
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-}
-
-.card{
-
-background:#111c2c;
-
-border-radius:18px;
-
-padding:25px;
-
-transition:.3s;
-
-cursor:pointer;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-background:#16263c;
-
-}
-
-.card h2{
-
-margin-bottom:10px;
-
-}
-
-.card p{
-
-opacity:.8;
-
-line-height:1.6;
-
-}
-
-footer{
-
-padding:30px;
-
-text-align:center;
-
-opacity:.7;
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="hero">
+
+<div class="overlay">
 
 <h1>HOC HUB</h1>
 
-<p>One Place For Every Update</p>
+<p>Your Ultimate App Guide & Community</p>
+
+<a href="#apps" class="btn">Explore Apps</a>
+
+</div>
 
 </header>
 
-<div class="container">
+<nav class="navbar">
 
-<div class="grid">
+<a href="#">Home</a>
+
+<a href="#apps">Apps</a>
+
+<a href="#">Events</a>
+
+<a href="#">Topup</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+<section id="apps" class="apps">
+
+<h2>Our Apps</h2>
+
+<div class="cards">
 
 <div class="card">
-
-<h2>MOJU APP</h2>
-
-<p>Latest updates and events.</p>
-
-</div>
-
-<div class="card">
-
-<h2>HIFAMI APP</h2>
-
-<p>Official information and guides.</p>
-
-</div>
-
-<div class="card">
-
-<h2>Topup Details</h2>
-
-<p>Payment instructions and support.</p>
-
+<h3>Moju App</h3>
+<p>Introduction, Rules, Tasks, Events & Updates</p>
+<button>Open</button>
 </div>
 
 <div class="card">
-
-<h2>Contact Us</h2>
-
-<p>Need help? Contact HOC Team.</p>
-
+<h3>Hifami App</h3>
+<p>Guides, Family Tasks, Events & Topup Details</p>
+<button>Open</button>
 </div>
 
 </div>
 
-</div>
+</section>
 
-<footer>
-
-© 2026 HOC Hub
-
-</footer>
+<script src="script.js"></script>
 
 </body>
+
 </html>
