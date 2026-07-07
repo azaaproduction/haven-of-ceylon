@@ -1,34 +1,17 @@
-// HOC Hub JavaScript
+const cards = document.querySelectorAll(".news-card");
 
-console.log("HOC Hub Loaded Successfully");
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    console.log("Website Ready");
-
-});
-
-const toggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
-
-toggle.addEventListener("click", function () {
-    menu.classList.toggle("active");
-});
-
-const slides = document.querySelectorAll(".slide");
-
-let current = 0;
+let index = 0;
 
 setInterval(() => {
 
-    slides[current].classList.remove("active");
+cards[index].classList.remove("active");
 
-    current++;
+index++;
 
-    if(current >= slides.length){
-        current = 0;
-    }
+if(index >= cards.length){
+index = 0;
+}
 
-    slides[current].classList.add("active");
+cards[index].classList.add("active");
 
-},5000);
+},3000);
