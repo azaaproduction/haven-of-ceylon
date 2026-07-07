@@ -226,3 +226,61 @@ transition:.3s;
 .menu a:hover{
 color:#00d4ff;
 }
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00d8ff;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:#10192c;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+@media(max-width:768px){
+
+.menu{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    position:absolute;
+    top:70px;
+    left:0;
+    background:#10192c;
+    padding:20px;
+}
+
+.menu.active{
+    display:flex;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+}
